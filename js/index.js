@@ -132,6 +132,6 @@ skills.forEach(skill => {
 });
 
 projects.forEach(project => {
-  const cards = document.querySelector(".projects");
+  const cards = document.querySelector(".projects-cards");
   cards.appendChild(ProjectCard(project));
 });
