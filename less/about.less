@@ -5,6 +5,14 @@
 
 .about-me {
   .flex();
+
+  @media @tablet {
+    flex-direction: row;
+
+    img {
+      padding: 0 5em 5em 5em;
+    }
+  }
 }
 
 .about-me-text {
@@ -12,9 +20,22 @@
 
   h2 {
     font-size: 3rem;
+
+    @media @desktop {
+      font-size: 5rem;
+    }
   }
 
   p {
     font-size: 2rem;
+    padding: 0 1em;
+
+    @media @desktop {
+      font-size: 3rem;
+    }
+  }
+
+  @media @desktop {
+    width: 40%;
   }
 }

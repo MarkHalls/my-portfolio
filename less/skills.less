@@ -2,6 +2,19 @@
   background-color: @skills-background;
   width: 100%;
   padding: 5em;
+
+  p {
+    font-size: 2rem;
+  }
+}
+
+.skills-cards {
+  .flex();
+
+  @media @desktop {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 
 .skills-card {
@@ -10,15 +23,31 @@
 
   i {
     font-size: 8rem;
+
+    @media @desktop {
+      font-size: 12rem;
+    }
+  }
+
+  @media @tablet {
+    margin: 2em;
   }
 }
 
-.skills-card-title {
+p.skills-card-title {
   font-size: 2rem;
+
+  @media @desktop {
+    font-size: 3rem;
+  }
 }
 
-.skills-card-description {
+p.skills-card-description {
   font-size: 1.5rem;
+
+  @media @desktop {
+    font-size: 2.5rem;
+  }
 }
 
 .fa-html5 {

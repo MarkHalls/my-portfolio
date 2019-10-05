@@ -87,15 +87,15 @@ const ProjectCard = project => {
   const card = document.createElement("div");
   card.classList.add("projects-card");
 
-  const img = document.createElement("img");
-  img.src = project.img;
-  card.appendChild(img);
-
   const link = document.createElement("a");
   link.classList.add("projects-card-title");
   link.href = project.link;
   link.textContent = project.title;
   card.appendChild(link);
+
+  const img = document.createElement("img");
+  img.src = project.img;
+  card.appendChild(img);
 
   const stack = document.createElement("p");
   stack.textContent = project.techStack;

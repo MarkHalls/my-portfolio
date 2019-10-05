@@ -1,8 +1,17 @@
 .projects {
   background-color: @project-background;
+  width: 100%;
 
   img {
     padding: 1em;
+
+    @media @tablet {
+      max-width: 60%;
+    }
+    @media @desktop {
+      height: 300px;
+      width: 100%;
+    }
   }
 
   p {
@@ -11,14 +20,39 @@
 
   .fa-github-square {
     font-size: 3rem;
+    color: #211f1f;
+
+    @media @desktop {
+      font-size: 6rem;
+    }
+  }
+}
+
+.projects-cards {
+  .flex();
+
+  @media @desktop {
+    flex-direction: row;
+    justify-content: space-evenly;
   }
 }
 
 .projects-card {
   .flex();
   margin: 6em 3em;
+
+  @media @desktop {
+    p {
+      font-size: 2.25rem;
+    }
+  }
 }
 
 .projects-card-title {
   font-size: 2rem;
+
+  @media @desktop {
+    font-size: 3rem;
+    padding: 1em;
+  }
 }

@@ -330,11 +330,19 @@ a {
 h4 {
   font-size: 2rem;
 }
+@media (min-width: 1000px) {
+  h4 {
+    font-size: 4rem;
+  }
+}
 h4,
 p,
 i,
 a {
   text-align: center;
+}
+a {
+  color: black;
 }
 header {
   width: 100%;
@@ -351,6 +359,12 @@ nav a {
   color: white;
   padding: 1rem;
 }
+@media (min-width: 800px) {
+  nav {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
 .about {
   background-color: #ffffff;
   padding: 5em 0;
@@ -361,6 +375,14 @@ nav a {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 800px) {
+  .about-me {
+    flex-direction: row;
+  }
+  .about-me img {
+    padding: 0 5em 5em 5em;
+  }
+}
 .about-me-text {
   display: flex;
   flex-direction: column;
@@ -370,13 +392,44 @@ nav a {
 .about-me-text h2 {
   font-size: 3rem;
 }
+@media (min-width: 1000px) {
+  .about-me-text h2 {
+    font-size: 5rem;
+  }
+}
 .about-me-text p {
   font-size: 2rem;
+  padding: 0 1em;
+}
+@media (min-width: 1000px) {
+  .about-me-text p {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 1000px) {
+  .about-me-text {
+    width: 40%;
+  }
 }
 .skills {
   background-color: #fafafa;
   width: 100%;
   padding: 5em;
+}
+.skills p {
+  font-size: 2rem;
+}
+.skills-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1000px) {
+  .skills-cards {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 .skills-card {
   display: flex;
@@ -388,11 +441,31 @@ nav a {
 .skills-card i {
   font-size: 8rem;
 }
-.skills-card-title {
+@media (min-width: 1000px) {
+  .skills-card i {
+    font-size: 12rem;
+  }
+}
+@media (min-width: 800px) {
+  .skills-card {
+    margin: 2em;
+  }
+}
+p.skills-card-title {
   font-size: 2rem;
 }
-.skills-card-description {
+@media (min-width: 1000px) {
+  p.skills-card-title {
+    font-size: 3rem;
+  }
+}
+p.skills-card-description {
   font-size: 1.5rem;
+}
+@media (min-width: 1000px) {
+  p.skills-card-description {
+    font-size: 2.5rem;
+  }
 }
 .fa-html5 {
   color: #e34f26;
@@ -405,15 +478,45 @@ nav a {
 }
 .projects {
   background-color: #f4f4f4;
+  width: 100%;
 }
 .projects img {
   padding: 1em;
+}
+@media (min-width: 800px) {
+  .projects img {
+    max-width: 60%;
+  }
+}
+@media (min-width: 1000px) {
+  .projects img {
+    height: 300px;
+    width: 100%;
+  }
 }
 .projects p {
   font-size: 1.5rem;
 }
 .projects .fa-github-square {
   font-size: 3rem;
+  color: #211f1f;
+}
+@media (min-width: 1000px) {
+  .projects .fa-github-square {
+    font-size: 6rem;
+  }
+}
+.projects-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1000px) {
+  .projects-cards {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 .projects-card {
   display: flex;
@@ -422,11 +525,27 @@ nav a {
   align-items: center;
   margin: 6em 3em;
 }
+@media (min-width: 1000px) {
+  .projects-card p {
+    font-size: 2.25rem;
+  }
+}
 .projects-card-title {
   font-size: 2rem;
+}
+@media (min-width: 1000px) {
+  .projects-card-title {
+    font-size: 3rem;
+    padding: 1em;
+  }
 }
 .contact {
   background-color: #303030;
   color: white;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
 }
